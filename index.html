@@ -67,8 +67,8 @@
 
                 <!-- total expense and Balance -->
                 <div class="text-center font-semibold mt-4">
-                    <h4>Total Expense: <span>00</span></h4>
-                    <h4>Balance: <span>00</span></h4>
+                    <h4>Total Expense: <span id="total-expense">00</span></h4>
+                    <h4>Balance: <span id="balance">00</span></h4>
                 </div>
 
                 <!-- savings -->
@@ -81,7 +81,8 @@
 
                     <div class="grid grid-cols-2">
                         <p class="text-center "> %</p>
-                        <button class="bg-blue-400 font-semibold py-0 px-6 text-white rounded">Save</button>
+                        <button id="save-btn"
+                            class="bg-blue-400 font-semibold py-0 px-6 text-white rounded">Save</button>
                     </div>
                 </div>
 
@@ -97,7 +98,7 @@
         </section>
     </main>
 
-
+    <script src="js/money-calculate.js"></script>
 
 </body>
 
