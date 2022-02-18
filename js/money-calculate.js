@@ -67,5 +67,6 @@ document.getElementById('save-btn').addEventListener('click', function () {
 
     // clear input box 
     incomeInput.value = '';
+    saveInput.value = '';
 
 })

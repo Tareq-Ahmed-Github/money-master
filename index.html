@@ -11,23 +11,23 @@
 
 </head>
 
-<body>
+<body class="bg-lime-100">
 
     <!-- header part -->
-    <header class="my-8">
+    <header class="bg-lime-100 my-8">
         <h1 class="text-5xl text-center text-fuchsia-700 font-bold">Money Master</h1>
     </header>
 
-    <main>
-        <section class="grid grid-cols-2 m-4 space-x-40">
+    <main class="bg-lime-100">
+        <section class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 m-4">
 
             <!-- cover photo division -->
-            <div class="">
-                <img src="photos/pexels-pixabay-106152.jpg" alt="">
+            <div class="w-full">
+                <img class="w-full h-full rounded" src="photos/pexels-pixabay-106152.jpg" alt="">
             </div>
 
             <!-- calculator division -->
-            <div class="w-80">
+            <div class="w-full p-8 rounded bg-zinc-400">
                 <!-- income -->
                 <div>
                     <h1 class="text-3xl text-center font-semibold mb-3">INCOME</h1>
@@ -72,7 +72,7 @@
                 </div>
 
                 <!-- savings -->
-                <div class="flex mt-8">
+                <div class="flex mt-8 justify-center">
                     <div class="grid grid-cols-2">
                         <p class="text-center">Save:</p>
                         <input id="save-input" class="block mb-3 w-24 p-1 bg-green-100 border-2 border-gray-400 rounded"
