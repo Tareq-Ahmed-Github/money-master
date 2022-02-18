@@ -7,11 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>money calculator</title>
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
+
+    <!-- header part -->
+    <header class="my-8">
+        <h1 class="text-5xl text-center text-fuchsia-700 font-bold">Money Master</h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-2 m-4 space-x-40">
+
+            <!-- cover photo division -->
+            <div class="">
+                <img src="photos/pexels-pixabay-106152.jpg" alt="">
+            </div>
+
+            <!-- calculator division -->
+            <div class="w-80">
+                <!-- income -->
+                <div>
+                    <h1 class="text-3xl text-center font-semibold mb-3">INCOME</h1>
+                    <div class="grid grid-cols-2">
+                        <span class="text-center">Income:</span>
+                        <input id="income-input"
+                            class="block mb-3 p-1 w-10/12 bg-green-100 border-2 border-gray-400 rounded" type="text">
+                    </div>
+
+                </div>
+
+                <!-- expenses -->
+                <div>
+                    <h1 class="text-3xl text-center font-semibold mb-3 mt-8">EXPENSES</h1>
+                    <div class="grid grid-cols-2">
+                        <span class="text-center ">Food:</span>
+                        <input id="food-expense-input"
+                            class="block mb-3 p-1 w-10/12 bg-green-100 border-2 border-gray-400 rounded" type="text">
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <span class="text-center ">Rent:</span>
+                        <input id="rent-expense-input"
+                            class="block mb-3 p-1 w-10/12 bg-green-100 border-2 border-gray-400 rounded" type="text">
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <span class="text-center ">Clothes:</span>
+                        <input id="clothes-expense-input"
+                            class="block mb-3 p-1 w-10/12 bg-green-100 border-2 border-gray-400 rounded" type="text">
+                    </div>
+
+                    <div class="flex justify-center mt-2">
+                        <button id="calculate-btn"
+                            class="bg-blue-400 text-white font-semibold px-6 py-1 rounded">Calculate</button>
+                    </div>
+
+                </div>
+
+                <!-- total expense and Balance -->
+                <div class="text-center font-semibold mt-4">
+                    <h4>Total Expense: <span>00</span></h4>
+                    <h4>Balance: <span>00</span></h4>
+                </div>
+
+                <!-- savings -->
+                <div class="flex mt-8">
+                    <div class="grid grid-cols-2">
+                        <p class="text-center">Save:</p>
+                        <input id="save-input" class="block mb-3 w-24 p-1 bg-green-100 border-2 border-gray-400 rounded"
+                            type="text">
+                    </div>
+
+                    <div class="grid grid-cols-2">
+                        <p class="text-center "> %</p>
+                        <button class="bg-blue-400 font-semibold py-0 px-6 text-white rounded">Save</button>
+                    </div>
+                </div>
+
+                <!-- saving amount and remaining amount  -->
+                <div class="text-center font-semibold mt-8">
+                    <h4>Saving Amount: <span>00</span></h4>
+                    <h4>Remaining Balance: <span>00</span></h4>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
 
 
 
